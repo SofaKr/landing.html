@@ -41,7 +41,7 @@
 .lessontoday {
     font-family: Nunito Sans;
     font-size: 20px;
-    width: 350px;
+    max-width: 350px;
     height: 100px;
     padding-top: 70px;
  
@@ -235,7 +235,7 @@ h2 {
 
 .longtext {
    
-    width: 600px;
+    max-width: 600px;
     padding-top: 80px;
     
 }
@@ -248,6 +248,12 @@ h2 {
     }
 }
 
+.textimage {
+    display: flex;
+    justify-content:space-between
+   
+}
+
 .confidently {
     font-size: 30px;
     font-family:Nunito Sans;
@@ -258,21 +264,25 @@ h2 {
     padding-top: 20px;
 }
 .about-us-image {
-    width: 500px;
-    margin-left: 20px;
+    max-width: 600px;
+    
 }
   
   
 
-.textimage {
-    display: flex;
-    justify-content:space-between
-   
-}
+
 .free {
     background-color: #ffedd5;
     padding-bottom: 100px;
     padding-top: 80px;
+}
+
+@media (max-width: 600px) {
+    .free {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .freelesson {
     display: flex;
@@ -291,6 +301,14 @@ h2 {
 .information {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .information {
+        
+        display: flex;
+        flex-direction: column;
+    }
 }
 .entry {
     font-family: Nunito Sans;
@@ -327,12 +345,22 @@ h2 {
 .recall {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
+    
     
 }
 .allrecall {
     background-color: #d6d3d1;
+    width: 100%;
  
+}
+
+@media (max-width: 600px) {
+    .allrecall {
+        
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
 }
 
 
@@ -348,7 +376,7 @@ h2 {
     padding-top: 10px;
 }
 .all {
-    margin-left: 100px;
+   
     display: flex;
     flex-direction: column;
    justify-content: center;
@@ -357,20 +385,19 @@ h2 {
 }
 .recallone {
     padding: 20px;
-    width: 800px;
-    margin-left: 200px;
+    max-width: 600px;
+   
     box-shadow: 0px 3px 0px #57534e;
 }
 .recallotwo {
     padding: 20px;
-    width: 800px;
-    margin-left: 200px;
+    max-width: 600px;
+
     box-shadow: 0px 3px 0px #57534e;
 }
 .recallthree {
     padding: 20px;
-    width: 800px;
-    margin-left: 200px;
+    max-width: 600px;
     box-shadow: 0px 3px 0px #57534e;
 }
 .abonements {
@@ -382,8 +409,25 @@ h2 {
     width: 100%;
 }
 
+
+@media (max-width: 600px) {
+    .abonements{
+        
+       
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .threeabonements{
+        
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+}
 .first {
-    width: 300px;
+    max-width: 300px;
     
     border: 1px solid grey;
     border-radius: 10px;  
@@ -433,4 +477,16 @@ background-color: #ea580c;
     font-size: 25px;
     color: #44403c;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .foot {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        gap: 20px;
+        padding: 25px;
+    }
 }
