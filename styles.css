@@ -1,7 +1,7 @@
 
 @media (max-width: 600px) {
-    .title {
-        font-size: 40px;
+    .h1 {
+        font-size: 30px;
     }
 }
 #hero {
@@ -135,7 +135,7 @@ a {
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
     .boxes {
         display: flex;
         flex-direction: column;
