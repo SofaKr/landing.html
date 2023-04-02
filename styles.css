@@ -1,23 +1,39 @@
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 40px;
+    }
+}
 #hero {
     
     background: url(hero4.jpg);
     background-position: center top;
     background-size: cover;
+    
 
 }
+@media (max-width: 600px) {
+    #hero {
+        
+        max-width: 600px;
+    }
+}
+
  
   
 .title {
     font-weight: 800;
     font-size: 70px;
     font-family: Nunito Sans;
+    max-width: 600px;
 }
 .h1 {
    
-    width: 600px;
-    height: 200px;
+   
+ 
     padding-top: 200px;
-    padding-left: 100px;
+   
+    max-width: 600px;
    
 
 
@@ -28,20 +44,22 @@
     width: 350px;
     height: 100px;
     padding-top: 70px;
-    padding-left: 99px;
+ 
+    max-width: 600px;
 }
 .testlesson {
     font-family: Nunito Sans;
     font-size: 20px;
     color: aliceblue;
-    width: 400px;
+    
     height: 80px;
     background-color: #f97316;
     padding-top: 30px;
     border-color: #ea580c;
-   margin-left: 100px;
+ 
    border-radius: 10px;
    padding: 10px;
+   max-width: 600px;
 }
 .testlesson:hover {
 background-color: #ea580c;
@@ -51,7 +69,7 @@ background-color: #ea580c;
     height: 100px ;
 }
 .logo {
-   margin-left: 100px;
+
    padding-top: 20px;
    width: 100px;
     height: 100px ;
@@ -59,7 +77,20 @@ background-color: #ea580c;
 .menu {
     display: flex;
     justify-content: space-between;
+   
+    flex-wrap: wrap;
+    gap: 10px;
+    
 }
+@media (max-width: 600px) {
+    .menu {
+        
+        max-width: 600px;
+    }
+}
+
+
+
 .matchrevievs {
     padding-top: 55px;
 
@@ -88,26 +119,50 @@ a {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    width: 300px;
-    height: 200px;
+   
 }
 .firstlesson {
    display: flex;
    justify-content: center;
 }
+
+@media (max-width: 600px) {
+    .firstlesson {
+        font-size: 25px;
+        max-width: 600px;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 h2 {
-    font-weight: 1000px;
+    
     font-size: 50px;
     font-family: Nunito Sans;
     padding-top: 60px;
 }
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+        max-width: 600px;
+    }
+}
 .start {
-    margin-left: 100px;
+ width: 100%;;
     
 }
   .one {
     width: 300px;
-        height: 150px ;
+       
         font-family: Nunito Sans;
         font-size: 20px;
         padding: 15px;
@@ -133,7 +188,7 @@ h2 {
     }
     .modern {
         width: 300px;
-        height: 150px ;
+       
         font-family: Nunito Sans;
         font-size: 20px;
         padding: 15px;
@@ -179,11 +234,20 @@ h2 {
 
 
 .longtext {
-    margin-left: 100px;
+   
     width: 600px;
-    height: 300px;
     padding-top: 80px;
+    
 }
+
+@media (max-width: 600px) {
+    .textimage {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
 .confidently {
     font-size: 30px;
     font-family:Nunito Sans;
@@ -315,6 +379,7 @@ h2 {
     font-size: 45px;
     font-family:Nunito Sans;
     padding: 60px;
+    width: 100%;
 }
 
 .first {
@@ -358,6 +423,7 @@ background-color: #ea580c;
 .threeabonements {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .foot {
     background-color: #d6d3d1;
@@ -366,4 +432,5 @@ background-color: #ea580c;
     padding: 60px;
     font-size: 25px;
     color: #44403c;
+    width: 100%;
 }
